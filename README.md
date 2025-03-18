@@ -1,6 +1,6 @@
 # Edit Terminallang (SQlite)
 
-Edit Terminallang-sql é um complemento para o Terminallang na versão SQLite, permitindo editar, excluir e listar frases armazenadas no banco de dados de forma simples e intuitiva diretamente pelo terminal.
+Edit Terminallang-sqlite é um complemento para o Terminallang na versão SQLite, permitindo editar, excluir e listar frases armazenadas no banco de dados de forma simples e intuitiva diretamente pelo terminal.
 
 Este script facilita a gestão das frases cadastradas, permitindo modificações sem precisar abrir um editor de banco de dados.
 
