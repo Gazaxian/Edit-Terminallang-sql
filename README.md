@@ -36,15 +36,15 @@ Escolha uma frase pelo ID e remova-a do banco de dados.
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/Gazaxian/edit_terminallang.git
+   git clone https://github.com/Gazaxian/edit_terminallang-sqlite.git
    ```
 2. Dê permissão de execução ao script:
    ```bash
-   chmod +x edit_terminallang-sql.sh
+   chmod +x edit_terminallang-sqlite.sh
    ```
 3. Execute o script:
    ```bash
-   ./edit_terminallang-sql.sh
+   ./edit_terminallang-sqlite.sh
    ```
 
 ## Personalização
