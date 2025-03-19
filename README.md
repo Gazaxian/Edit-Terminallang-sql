@@ -1,14 +1,15 @@
-# Edit Terminallang (SQlite)
+# **Edit Terminallang (SQLite)**
 
-Edit Terminallang-sqlite é um complemento para o Terminallang na versão SQLite, permitindo editar, excluir e listar frases armazenadas no banco de dados de forma simples e intuitiva diretamente pelo terminal.
+O **Edit Terminallang-sqlite** é um complemento para o Terminallang na versão SQLite, permitindo editar, excluir, listar e buscar frases armazenadas no banco de dados de forma simples e intuitiva diretamente pelo terminal.
 
-Este script facilita a gestão das frases cadastradas, permitindo modificações sem precisar abrir um editor de banco de dados.
+Este script facilita a gestão das frases cadastradas, permitindo modificações e buscas sem precisar abrir um editor de banco de dados.
 
 ## Funcionalidades
 
 - 📝 **Listar frases**: Exibe todas as frases armazenadas com paginação para facilitar a navegação.
 - 🔄 **Editar frases**: Permite modificar frases existentes no banco de dados.
-- ❌ **Excluir frases**: Remova frases indesejadas de forma fácil.
+- ❌ **Excluir frases**: Remove frases indesejadas de forma fácil.
+- 🔍 **Buscar frases**: Pesquisa frases com uma palavra-chave e exibe os resultados com paginação.
 - 🏢 **Interface colorida**: Uso de cores para melhor visualização e usabilidade.
 
 ## Como Usar
@@ -25,6 +26,9 @@ Escolha uma frase pelo ID e edite seu conteúdo diretamente no terminal.
 
 ### 3. Excluir uma Frase
 Escolha uma frase pelo ID e remova-a do banco de dados.
+
+### 4. Buscar uma Frase
+Pesquise por uma palavra-chave e o script exibirá as frases que a contêm, com paginação.
 
 ## Requisitos
 
