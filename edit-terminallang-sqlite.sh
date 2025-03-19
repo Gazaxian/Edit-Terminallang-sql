@@ -42,14 +42,6 @@ listar_frases() {
     done
 }
 
-# Função para adicionar uma nova frase
-adicionar_frase() {
-    echo -e "${AZUL}Digite a nova frase:${RESET}"
-    read frase
-    sqlite3 "$db" "INSERT INTO frases (frase) VALUES ('$frase');"
-    echo -e "${VERDE}✅ Frase adicionada com sucesso!${RESET}"
-}
-
 # Função para editar uma frase existente
 editar_frase() {
     listar_frases
@@ -73,19 +65,17 @@ excluir_frase() {
 # Menu principal
 while true; do
     echo -e "\n📚 ${BRANCO}Editor do Terminallang-SQLite${RESET}\n"
-    echo -e "${AZUL}1) ✏️ Adicionar frase${RESET}"
-    echo -e "${VERDE}2) 📖 Listar frases${RESET}"
-    echo -e "${AMARELO}3) ✍️ Editar frase${RESET}"
-    echo -e "${VERMELHO}4) ❌ Excluir frase${RESET}"
-    echo -e "${BRANCO}5) 🚪 Sair${RESET}"
+    echo -e "${AZUL}1) 📖 Listar frases${RESET}"
+    echo -e "${AMARELO}2) ✍️ Editar frase${RESET}"
+    echo -e "${VERMELHO}3) ❌ Excluir frase${RESET}"
+    echo -e "${BRANCO}4) 🚪 Sair${RESET}"
     read -p "Escolha uma opção: " opcao
     
     case $opcao in
-        1) adicionar_frase ;;
-        2) listar_frases ;;
-        3) editar_frase ;;
-        4) excluir_frase ;;
-        5) echo -e "${VERMELHO}Saindo...${RESET}"; exit 0 ;;
+        1) listar_frases ;;
+        2) editar_frase ;;
+        3) excluir_frase ;;
+        4) echo -e "${VERMELHO}Saindo...${RESET}"; exit 0 ;;
         *) echo -e "${VERMELHO}Opção inválida!${RESET}" ;;
     esac
 
